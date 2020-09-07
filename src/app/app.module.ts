@@ -9,19 +9,22 @@ import { DarkenOnHoverDirective } from './shared/directives/darken-on-hover/dark
 import { SignInComponent } from './home/sign-in/sign-in.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { VmessageComponent } from './shared/vmessage/vmessage.component';
+import { CoreModule} from './core/core.module'
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
-    VmessageComponent
+    VmessageComponent,
+
   ],
   imports: [
     BrowserModule,
     PhotosModule,
     AppRoutingModule,
     ErrorsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
