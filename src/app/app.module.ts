@@ -1,21 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { PhotosModule } from './photos/photos.module';
-import { AppRoutingModule } from './app-routing.module';
-import {ErrorsModule} from './errors/errors.module';
 import { DarkenOnHoverDirective } from './shared/directives/darken-on-hover/darken-on-hover.directive';
 import { SignInComponent } from './home/sign-in/sign-in.component';
-import {ReactiveFormsModule} from '@angular/forms';
-import { VmessageComponent } from './shared/vmessage/vmessage.component';
-import { CoreModule} from './core/core.module'
+import { SignUpComponent } from './home/sign-up/sign-up.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PhotosModule } from './photos/photos.module';
+import { ErrorsModule } from './errors/errors.module';
+import { CoreModule } from './core/core.module';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
-    VmessageComponent,
+    SignUpComponent,
 
   ],
   imports: [

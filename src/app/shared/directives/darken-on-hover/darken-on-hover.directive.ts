@@ -14,7 +14,6 @@ export class DarkenOnHoverDirective {
 
   @HostListener('mouseover')
   darkenOn() {
-    console.log('bla');
    this.render.setStyle(this.el.nativeElement, 'filter', `brightness(${this.brightness})`);
   }
   @HostListener('mouseleave')

@@ -5,7 +5,7 @@ import {VmessageComponent} from './vmessage.component';
 
 
 @NgModule({
-  declarations: [ VmessageComponent],
+  declarations: [ VmessageComponent ],
 exports: [ VmessageComponent ]
 })
 export class VmessageModule { }
